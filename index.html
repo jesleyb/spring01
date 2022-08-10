@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="./css/style-desktop.css">
+		<link rel="stylesheet" media="(max-width: 375px)" href="./css/style-celular.css">
+		<script src="./js/code.js"></script>
+		<title>Encriptador - Desencriptador</title>
+	</head>
+	<body>
+		<section id="cajapadre">
+			<div id="caja-logo">
+				<img src="./img/logo.png" alt="logo">
+			</div>
+			<div id="caja-entrada">
+				<textarea id="txtEntrada" type="text" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+				<div>
+					<img src="./img/exclamacion.png"> Solo letras minusculas y sin acentos
+				</div>
+				<button type="button" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+				<button type="button" id="btnDesencriptar"  onclick="desencriptar()">Desencriptar</button>
+			</div>
+			<div id="caja-salida">																																			
+				<div id="id-result-vacio">
+					<img id="id-mono" src="./img/mono.png">
+					<p id="id-ningun">Ningún mensaje fue encontrado</p>
+					<p id="id-ingresa">Ingresa el texto que desees encriptar o desencriptar.</p>
+				</div>
+				<div id="id-result-encrip">
+					<textarea id="txtEncrip" type="text" rows="19" readonly></textarea>
+					<button type="button" id="btnCopiar" onclick="copiar()">Copiar</button>
+				</div>
+				<div id="id-result-decrip">
+					<textarea id="txtDecrip" type="text" rows="19" readonly></textarea>
+					<button type="button" id="btnLimpiar" onclick="limpiar()">Limpiar</button>
+				</div>
+			</div>
+			<div class="restaurar"></div>
+		</section>
+		<footer>&lt;&lt;Desarrollado por <a href="https://app.aluracursos.com/user/jesleyb">Jesus Leyva Brenes</a>&gt;&gt;</footer>
+	</body>
+</html>

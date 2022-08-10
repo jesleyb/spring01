@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+#cajapadre textarea{	
+	outline: none !important;
+}
+
+#caja-logo {
+	float: left;
+	width: 7.5em; /*120px*/
+	text-align: center;
+	margin-top: 1em;
+}
+
+/**********************************************************************************/
+#caja-entrada {
+    float: left;
+	width: 32em; /*500px*/
+	height: 100%;
+	text-align: left;
+}
+#txtEntrada {
+	width: 15em; /*460px*/
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2em;
+	line-height: 150%;
+	color: #0A3871;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	border: none;
+	background: #F3F5FC;
+	resize: none;
+	text-transform: lowercase;
+}
+#caja-entrada button {
+	border-radius: 12px;
+	border: 1px solid #0A3871;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 7em;
+	margin: 0.9em 1em;
+	padding: 6px;
+}
+#btnEncriptar {
+	color: #FFFFFF;
+	background: #0A3871;
+}
+#btnEncriptar:hover {
+	background: #D8DFE8;
+	color: #0A3871;
+}
+#btnDesencriptar {
+	color: #0A3871;
+	background: #D8DFE8;
+}
+#btnDesencriptar:hover {
+	color: #FFFFFF;
+	background: #0A3871;
+}
+
+/**********************************************************************************/
+#caja-salida {
+    float: left;
+	width: 19em; /*300px*/
+	margin-top: 1em;
+}
+#caja-salida div {
+	background: #FFFFFF;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	padding: 10px 20px;
+}
+#caja-salida textarea {
+	width: 100%;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	color: #0A3871;
+	border: none;
+	background: #FFFFFF;
+	resize: none;
+}
+#caja-salida button {
+	border-radius: 12px;
+	border: 1px solid #0A3871;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 7em;
+	margin-top: 0.8em;
+	padding: 6px;
+	color: #0A3871;
+	background: #D8DFE8;
+}
+#btnCopiar:hover, #btnLimpiar:hover {
+	color: #FFFFFF;
+	background: #0A3871;
+}
+#id-result-encrip, #id-result-decrip {
+	text-align: center;
+	display: none;
+}
+#id-result-vacio {
+	text-align: center;
+}
+#id-mono {
+	width: 90%;
+}
+#caja-salida p {
+	font-family: 'Inter';
+	font-style: normal;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#id-ningun {
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 120%;
+	color: #343A40;
+}
+#id-ingresa {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 150%;
+	color: #495057;
+}
+
+.restaurar {
+	clear: both;
+}
+
+footer {
+	text-align: center;
+	border-top: 1px dashed;
+	font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+	#id-mono {
+		width: 0%;
+	}
+}
